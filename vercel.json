@@ -14,8 +14,8 @@
     "env": {
         "APP_ENV": "production",
         "APP_DEBUG": "false",
-        "APP_URL": "https://shoes-backend-three.vercel.app",
-        
+        "APP_URL": "https://shoes-inky-seven.vercel.app",
+        "APP_KEY": "base64:6KJ7JjulEnFVFqgcJJUbLte2JCGvumugjUI6ZhO1B6A=",
         "VIEW_COMPILED_PATH": "/tmp/views",
         "APP_VIEWS_CACHE": "/tmp/views",
         "CACHE_DRIVER": "array",
