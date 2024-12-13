@@ -16,11 +16,12 @@ return Application::configure(basePath: dirname(__DIR__))
     $middleware->append(function ($request, $next) {
         $response = $next($request);
         
-        $response->headers->set('Access-Control-Allow-Origin', 'https://shoes1-omega.vercel.app');
-        $response->headers->set('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE, OPTIONS');
-        $response->headers->set('Access-Control-Allow-Headers', 'Content-Type, Authorization');
-        
-        return $response;
+            $response->headers->set('Access-Control-Allow-Origin', 'https://shoes1-omega.vercel.app');
+            $response->headers->set('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE, OPTIONS');
+            $response->headers->set('Access-Control-Allow-Headers', 'Content-Type, Authorization, X-Requested-With');
+            $response->headers->set('Access-Control-Allow-Credentials', 'true');
+            
+            return $response;
     });
 })
     ->withExceptions(function (Exceptions $exceptions) {
