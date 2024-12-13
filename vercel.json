@@ -2,14 +2,11 @@
     "version": 2,
       "framework": null,
     "functions": {
-        "api/index.php": { "runtime": "vercel-php@0.7.1" }
+        "api/index.php": { "runtime": "vercel-php@0.6.0" }
     },
     "routes": [
-        { "src": "/api/shopify-products", "dest": "/api/index.php" },
-        { "src": "/api/featured-products", "dest": "/api/index.php" },
-        { "src": "/api/products/([^/]+)", "dest": "/api/index.php" },
-        { "src": "/api/checkout", "dest": "/api/index.php" },
-        { "src": "/(.*)", "dest": "/api/index.php" }
+            "src": "/build/(.*)",
+            "dest": "/build/$1"
     ],
     "env": {
         "APP_ENV": "production",
