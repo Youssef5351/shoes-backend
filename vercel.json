@@ -11,7 +11,7 @@
     "env": {
         "APP_ENV": "production",
         "APP_DEBUG": "true",
-        "APP_URL": "https://shoes-inky-seven.vercel.app/",
+        "APP_URL": "https://shoes-inky-seven.vercel.app",
         "APP_KEY" :"base64:6KJ7JjulEnFVFqgcJJUbLte2JCGvumugjUI6ZhO1B6A=",
         "APP_CONFIG_CACHE": "/tmp/config.php",
         "APP_EVENTS_CACHE": "/tmp/events.php",
