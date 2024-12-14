@@ -6,7 +6,12 @@
     },
     "routes": [{
         "src": "/(.*)",
-        "dest": "/api/index.php"
+        "dest": "/api/index.php",
+        "headers": {
+            "Access-Control-Allow-Origin": "https://shoes-inky-seven.vercel.app",
+            "Access-Control-Allow-Methods": "GET,POST,PUT,DELETE,OPTIONS",
+            "Access-Control-Allow-Headers": "Content-Type, Authorization, X-Requested-With",
+            "Access-Control-Allow-Credentials": "true"
     }],
     "env": {
         "APP_ENV": "production",
